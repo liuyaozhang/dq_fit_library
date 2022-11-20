@@ -108,6 +108,7 @@ class DQFitter:
         if fitMethod == "likelyhood":
             print("########### Perform likelyhood fit ###########")
             rooFitRes = ROOT.RooFitResult(pdf.fitTo(rooDs, ROOT.RooFit.Extended(ROOT.kTRUE), ROOT.RooFit.Save()))
+            print("test from Liuyao")
         if fitMethod == "chi2":
             print("########### Perform X2 fit ###########")
             rooFitRes = ROOT.RooFitResult(pdf.chi2FitTo(rooDs, ROOT.RooFit.Save()))
