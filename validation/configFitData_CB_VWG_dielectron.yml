@@ -1,0 +1,49 @@
+{
+    "input": {
+      "input_file_name": "/Users/liuyaozhang/alice_Analysis/o2physics/Draw_analysis/JPsi_KF/qaJpsi.root",
+      "input_name": ["fmassKF"],
+      "pdf_dictionary": {
+        "pdf": ["CB", "VWG", "SUM"],
+        "pdfName": ["Jpsi", "Bkg", "SUM"],
+        "pdfNameForLegend": ["J/#psi", "Background", "Fit"],
+        "pdfColor": [861, 1],
+        "pdfStyle": [1, 2],
+        "parVal": [
+          [3.096, 1.2e-01, 1.089, 3.393],
+          [1, 1, 1],
+          [100, 1000]
+        ],
+        "parLimMin": [
+          [2.9, 3.0e-02, 1.0889, 3.3929],
+          [-10, 0, -100],
+          [0, 0]
+        ],
+        "parLimMax": [
+          [3.5, 2.5e-01, 1.0891, 3.3931],
+          [10, 100, 100],
+          [5000, 50000]
+        ],
+        "parName": [
+          ["mean_Jpsi", "width_Jpsi", "a_Jpsi", "b_Jpsi"],
+          ["aa", "bb", "cc"],
+          ["sig_Jpsi", "bkg"]
+        ],
+        "fitRangeMin": [2.4],
+        "fitRangeMax": [4.6],
+        "fitMethod": "likelyhood",
+        "doResidualPlot": true,
+        "doPullPlot": true, 
+        "doCorrMatPlot": true,
+        "doAlicePlot": true,
+        "parForAlicePlot": ["mean_Jpsi", "width_Jpsi", "sig_Jpsi"],
+        "parNameForAlicePlot": ["#mu_{J/#psi}", "#sigma_{J/#psi}", "#it{N}_{J/#psi}"],
+        "text": [
+          [0.20, 0.87, "LHC18b, pp #sqrt{#it{s}} = 13 TeV"], 
+          [0.20, 0.80, "|#it{y}| < 0.9, J/#psi #rightarrow e^{+}e^{-}"]
+        ]
+      }
+    },
+    "output": {
+      "output_path": "output/dielectrons_CB_VWG/"
+    }
+  }
